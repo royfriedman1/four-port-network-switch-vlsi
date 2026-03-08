@@ -1,0 +1,80 @@
+Information: The stitching and editing of coupling caps is turned OFF for design 'switch_4port_no_cg_f.dlib:switch_4port.design'. (TIM-125)
+Information: Design Average RC for design switch_4port  (NEX-011)
+Information: r = 1.053588 ohm/um, via_r = 0.461341 ohm/cut, c = 0.072109 ff/um, cc = 0.000000 ff/um (X dir) (NEX-017)
+Information: r = 1.384202 ohm/um, via_r = 0.578659 ohm/cut, c = 0.083105 ff/um, cc = 0.000000 ff/um (Y dir) (NEX-017)
+Information: The RC mode used is VR for design 'switch_4port'. (NEX-022)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 1385, routed nets = 0, across physical hierarchy nets = 0, parasitics cached nets = 1385, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+Design : switch_4port
+Version: V-2023.12-SP3
+Date   : Sat Jan 17 21:07:00 2026
+****************************************
+
+  Startpoint: u_Routing/SLAVE_SWITCH[2].u_arbiter/u_Arbiter_control_unit/SELECT_RDY[3].u_d_ff/dout_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_Routing/SLAVE_SWITCH[1].u_arbiter/u_Arbiter_control_unit/SELECT_RDY[1].u_d_ff/dout_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Mode: FUNC
+  Corner: Slow
+  Scenario: FUNC_Slow
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  u_Routing/SLAVE_SWITCH[2].u_arbiter/u_Arbiter_control_unit/SELECT_RDY[3].u_d_ff/dout_reg[0]/CLK (SDFFARX1_HVT)
+                                                   0.00      0.00 r
+  u_Routing/SLAVE_SWITCH[2].u_arbiter/u_Arbiter_control_unit/SELECT_RDY[3].u_d_ff/dout_reg[0]/Q (SDFFARX1_HVT)
+                                                   0.64      0.64 r
+  SWITCH_UNIT_MASTER_CONTROL[3].u_switch_port/u_Master_Control_unit/ctmi_53/Y (XNOR2X1_RVT)
+                                                   0.25      0.90 r
+  SWITCH_UNIT_MASTER_CONTROL[3].u_switch_port/u_Master_Control_unit/ctmi_50/Y (NAND4X0_RVT)
+                                                   0.16      1.05 f
+  SWITCH_UNIT_MASTER_CONTROL[3].u_switch_port/u_Master_Control_unit/ctmi_49/Y (AOI21X2_RVT)
+                                                   0.32      1.38 r
+  u_Routing/SLAVE_SWITCH[1].u_arbiter/u_Arbiter_control_unit/ctmi_102/Y (NOR3X2_HVT)
+                                                   1.32      2.70 f
+  u_Routing/SLAVE_SWITCH[1].u_arbiter/u_Arbiter_control_unit/ctmTdsLR_1_549/Y (NOR2X1_RVT)
+                                                   0.28      2.98 r
+  u_Routing/SLAVE_SWITCH[1].u_arbiter/u_Arbiter_control_unit/ctmi_306/Y (OA222X1_RVT)
+                                                   0.20      3.18 r
+  u_Routing/SLAVE_SWITCH[1].u_arbiter/u_Arbiter_control_unit/phfnr_buf_438/Y (INVX0_HVT)
+                                                   0.22      3.40 f
+  u_Routing/SLAVE_SWITCH[1].u_arbiter/u_Arbiter_control_unit/ctmi_118/Y (OAI221X1_RVT)
+                                                   0.43      3.83 r
+  u_Routing/SLAVE_SWITCH[1].u_arbiter/u_Arbiter_control_unit/ctmi_116/Y (AO22X1_RVT)
+                                                   0.13      3.96 r
+  u_Routing/SLAVE_SWITCH[1].u_arbiter/u_Arbiter_control_unit/ctmi_109/Y (OA21X2_HVT)
+                                                   1.34      5.30 r
+  u_Routing/SLAVE_SWITCH[1].u_arbiter/u_Arbiter_control_unit/HFSINV_127_487/Y (INVX0_HVT)
+                                                   0.81      6.11 f
+  u_Routing/SLAVE_SWITCH[1].u_arbiter/u_Arbiter_control_unit/ctmi_128/Y (AND3X1_RVT)
+                                                   0.35      6.47 f
+  u_Routing/SLAVE_SWITCH[1].u_arbiter/u_Arbiter_control_unit/SELECT_RDY[1].u_d_ff/ctmi_6/Y (MUX21X1_RVT)
+                                                   0.21      6.68 f
+  u_Routing/SLAVE_SWITCH[1].u_arbiter/u_Arbiter_control_unit/SELECT_RDY[1].u_d_ff/dout_reg[0]/D (SDFFARX1_HVT)
+                                                   0.00      6.68 f
+  data arrival time                                          6.68
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  u_Routing/SLAVE_SWITCH[1].u_arbiter/u_Arbiter_control_unit/SELECT_RDY[1].u_d_ff/dout_reg[0]/CLK (SDFFARX1_HVT)
+                                                   0.00     10.00 r
+  clock uncertainty                               -0.15      9.85
+  library setup time                              -0.51      9.34
+  data required time                                         9.34
+  ------------------------------------------------------------------------
+  data required time                                         9.34
+  data arrival time                                         -6.68
+  ------------------------------------------------------------------------
+  slack (MET)                                                2.67
+
+
+1

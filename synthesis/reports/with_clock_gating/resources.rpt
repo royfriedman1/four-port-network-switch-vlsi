@@ -1,0 +1,463 @@
+****************************************
+Report : report_resources
+Design : switch_4port
+Version: V-2023.12-SP3
+Date   : Sat Jan 17 20:58:25 2026
+****************************************
+------------------------------------------------
+ Design : switch_port_AMOUNT_SLAVE4_MASTER_NUM0 
+------------------------------------------------
+
+ Cell : SWITCH_UNIT_MASTER_CONTROL[0].u_switch_port/DP_OP_11_53302_61764_J11 
+-----------------------------------------------------------------------------
+
+   Module                :  DP_OP_11_53302_61764_J31_H0_D0            
+   Current Implementation:  str(area)                                 
+   Contained Operations  :  add_2_countones_36_C78(switch_port.sv:36) 
+                            add_3_countones_36_C78(switch_port.sv:36) 
+                            add_countones_36_C78(switch_port.sv:36)   
+   Has Tree              :  Yes                                       
+
+                 Data                                                       
+   Var     Type  Class     Width  Expression                                
+  --------------------------------------------------------------------------
+   PI_0    PI    Unsigned      1                                            
+   PI_1    PI    Unsigned      1                                            
+   PI_2    PI    Unsigned      1                                            
+   PI_3    PI    Unsigned      1                                            
+   T2      IFO   Unsigned      3  PI_0 + PI_1 (switch_port.sv:36)           
+   T7      IFO   Unsigned      2  T2[1:0]                                   
+   PO_0    PO    Unsigned      3  T7 + PI_2 + PI_3 (switch_port.sv:36)      
+  --------------------------------------------------------------------------
+
+----------------------------------------------
+ Design : Master_Control_unit_AMOUNT_SLAVE4_0 
+----------------------------------------------
+
+ Cell : SWITCH_UNIT_MASTER_CONTROL[0].u_switch_port/u_Master_Control_unit/eq_26 
+--------------------------------------------------------------------------------
+
+   Module                :  DW01_cmp6_J27_H0_D1              
+   Parameters            :  width=4                          
+   Current Implementation:  pparch(area)                     
+   Contained Operations  :  eq_26(Master_control_unit.sv:26) 
+   Has Tree              :  No                               
+
+------------------------
+ Design : FIFO_DEPTH4_0 
+------------------------
+
+ Cell : SWITCH_UNIT_MASTER_CONTROL[0].u_switch_port/u_FIFO/add_38 
+------------------------------------------------------------------
+
+   Module                :  DW01_add_J21_H1_D1 
+   Parameters            :  width=2            
+   Current Implementation:  pparch(area)       
+   Contained Operations  :  add_38(FIFO.sv:38) 
+   Has Tree              :  No                 
+
+ Cell : SWITCH_UNIT_MASTER_CONTROL[0].u_switch_port/u_FIFO/add_43 
+------------------------------------------------------------------
+
+   Module                :  DW01_add_J21_H2_D1 
+   Parameters            :  width=2            
+   Current Implementation:  pparch(area)       
+   Contained Operations  :  add_27(FIFO.sv:27) 
+                            add_43(FIFO.sv:43) 
+   Has Tree              :  No                 
+
+ Cell : SWITCH_UNIT_MASTER_CONTROL[0].u_switch_port/u_FIFO/eq_43 
+-----------------------------------------------------------------
+
+   Module                :  DW01_cmp6_J21_H3_D1 
+   Parameters            :  width=2             
+   Current Implementation:  pparch(area)        
+   Contained Operations  :  eq_43(FIFO.sv:43)   
+   Has Tree              :  No                  
+
+ Cell : SWITCH_UNIT_MASTER_CONTROL[0].u_switch_port/u_FIFO/eq_44 
+-----------------------------------------------------------------
+
+   Module                :  DW01_cmp6_J21_H0_D1 
+   Parameters            :  width=2             
+   Current Implementation:  pparch(area)        
+   Contained Operations  :  eq_44(FIFO.sv:44)   
+   Has Tree              :  No                  
+
+------------------------------------------------
+ Design : switch_port_AMOUNT_SLAVE4_MASTER_NUM1 
+------------------------------------------------
+
+ Cell : SWITCH_UNIT_MASTER_CONTROL[1].u_switch_port/DP_OP_11_53302_25031_J10 
+-----------------------------------------------------------------------------
+
+   Module                :  DP_OP_11_53302_25031_J30_H0_D0            
+   Current Implementation:  str(area)                                 
+   Contained Operations  :  add_2_countones_36_C78(switch_port.sv:36) 
+                            add_3_countones_36_C78(switch_port.sv:36) 
+                            add_countones_36_C78(switch_port.sv:36)   
+   Has Tree              :  Yes                                       
+
+                 Data                                                       
+   Var     Type  Class     Width  Expression                                
+  --------------------------------------------------------------------------
+   PI_0    PI    Unsigned      1                                            
+   PI_1    PI    Unsigned      1                                            
+   PI_2    PI    Unsigned      1                                            
+   PI_3    PI    Unsigned      1                                            
+   T2      IFO   Unsigned      3  PI_0 + PI_1 (switch_port.sv:36)           
+   T7      IFO   Unsigned      2  T2[1:0]                                   
+   PO_0    PO    Unsigned      3  T7 + PI_2 + PI_3 (switch_port.sv:36)      
+  --------------------------------------------------------------------------
+
+----------------------------------------------
+ Design : Master_Control_unit_AMOUNT_SLAVE4_1 
+----------------------------------------------
+
+ Cell : SWITCH_UNIT_MASTER_CONTROL[1].u_switch_port/u_Master_Control_unit/eq_26 
+--------------------------------------------------------------------------------
+
+   Module                :  DW01_cmp6_J27_H0_D1              
+   Parameters            :  width=4                          
+   Current Implementation:  pparch(area)                     
+   Contained Operations  :  eq_26(Master_control_unit.sv:26) 
+   Has Tree              :  No                               
+
+------------------------
+ Design : FIFO_DEPTH4_1 
+------------------------
+
+ Cell : SWITCH_UNIT_MASTER_CONTROL[1].u_switch_port/u_FIFO/add_38 
+------------------------------------------------------------------
+
+   Module                :  DW01_add_J21_H1_D1 
+   Parameters            :  width=2            
+   Current Implementation:  pparch(area)       
+   Contained Operations  :  add_38(FIFO.sv:38) 
+   Has Tree              :  No                 
+
+ Cell : SWITCH_UNIT_MASTER_CONTROL[1].u_switch_port/u_FIFO/add_43 
+------------------------------------------------------------------
+
+   Module                :  DW01_add_J21_H2_D1 
+   Parameters            :  width=2            
+   Current Implementation:  pparch(area)       
+   Contained Operations  :  add_27(FIFO.sv:27) 
+                            add_43(FIFO.sv:43) 
+   Has Tree              :  No                 
+
+ Cell : SWITCH_UNIT_MASTER_CONTROL[1].u_switch_port/u_FIFO/eq_43 
+-----------------------------------------------------------------
+
+   Module                :  DW01_cmp6_J21_H3_D1 
+   Parameters            :  width=2             
+   Current Implementation:  pparch(area)        
+   Contained Operations  :  eq_43(FIFO.sv:43)   
+   Has Tree              :  No                  
+
+ Cell : SWITCH_UNIT_MASTER_CONTROL[1].u_switch_port/u_FIFO/eq_44 
+-----------------------------------------------------------------
+
+   Module                :  DW01_cmp6_J21_H0_D1 
+   Parameters            :  width=2             
+   Current Implementation:  pparch(area)        
+   Contained Operations  :  eq_44(FIFO.sv:44)   
+   Has Tree              :  No                  
+
+------------------------------------------------
+ Design : switch_port_AMOUNT_SLAVE4_MASTER_NUM2 
+------------------------------------------------
+
+ Cell : SWITCH_UNIT_MASTER_CONTROL[2].u_switch_port/DP_OP_11_53302_6169_J9 
+---------------------------------------------------------------------------
+
+   Module                :  DP_OP_11_53302_6169_J29_H0_D0             
+   Current Implementation:  str(area)                                 
+   Contained Operations  :  add_2_countones_36_C78(switch_port.sv:36) 
+                            add_3_countones_36_C78(switch_port.sv:36) 
+                            add_countones_36_C78(switch_port.sv:36)   
+   Has Tree              :  Yes                                       
+
+                 Data                                                       
+   Var     Type  Class     Width  Expression                                
+  --------------------------------------------------------------------------
+   PI_0    PI    Unsigned      1                                            
+   PI_1    PI    Unsigned      1                                            
+   PI_2    PI    Unsigned      1                                            
+   PI_3    PI    Unsigned      1                                            
+   T2      IFO   Unsigned      3  PI_0 + PI_1 (switch_port.sv:36)           
+   T7      IFO   Unsigned      2  T2[1:0]                                   
+   PO_0    PO    Unsigned      3  T7 + PI_2 + PI_3 (switch_port.sv:36)      
+  --------------------------------------------------------------------------
+
+----------------------------------------------
+ Design : Master_Control_unit_AMOUNT_SLAVE4_2 
+----------------------------------------------
+
+ Cell : SWITCH_UNIT_MASTER_CONTROL[2].u_switch_port/u_Master_Control_unit/eq_26 
+--------------------------------------------------------------------------------
+
+   Module                :  DW01_cmp6_J27_H0_D1              
+   Parameters            :  width=4                          
+   Current Implementation:  pparch(area)                     
+   Contained Operations  :  eq_26(Master_control_unit.sv:26) 
+   Has Tree              :  No                               
+
+------------------------
+ Design : FIFO_DEPTH4_2 
+------------------------
+
+ Cell : SWITCH_UNIT_MASTER_CONTROL[2].u_switch_port/u_FIFO/add_38 
+------------------------------------------------------------------
+
+   Module                :  DW01_add_J21_H1_D1 
+   Parameters            :  width=2            
+   Current Implementation:  pparch(area)       
+   Contained Operations  :  add_38(FIFO.sv:38) 
+   Has Tree              :  No                 
+
+ Cell : SWITCH_UNIT_MASTER_CONTROL[2].u_switch_port/u_FIFO/add_43 
+------------------------------------------------------------------
+
+   Module                :  DW01_add_J21_H2_D1 
+   Parameters            :  width=2            
+   Current Implementation:  pparch(area)       
+   Contained Operations  :  add_27(FIFO.sv:27) 
+                            add_43(FIFO.sv:43) 
+   Has Tree              :  No                 
+
+ Cell : SWITCH_UNIT_MASTER_CONTROL[2].u_switch_port/u_FIFO/eq_43 
+-----------------------------------------------------------------
+
+   Module                :  DW01_cmp6_J21_H3_D1 
+   Parameters            :  width=2             
+   Current Implementation:  pparch(area)        
+   Contained Operations  :  eq_43(FIFO.sv:43)   
+   Has Tree              :  No                  
+
+ Cell : SWITCH_UNIT_MASTER_CONTROL[2].u_switch_port/u_FIFO/eq_44 
+-----------------------------------------------------------------
+
+   Module                :  DW01_cmp6_J21_H0_D1 
+   Parameters            :  width=2             
+   Current Implementation:  pparch(area)        
+   Contained Operations  :  eq_44(FIFO.sv:44)   
+   Has Tree              :  No                  
+
+------------------------------------------------
+ Design : switch_port_AMOUNT_SLAVE4_MASTER_NUM3 
+------------------------------------------------
+
+ Cell : SWITCH_UNIT_MASTER_CONTROL[3].u_switch_port/DP_OP_11_53302_49967_J8 
+----------------------------------------------------------------------------
+
+   Module                :  DP_OP_11_53302_49967_J28_H0_D0            
+   Current Implementation:  str(area)                                 
+   Contained Operations  :  add_2_countones_36_C78(switch_port.sv:36) 
+                            add_3_countones_36_C78(switch_port.sv:36) 
+                            add_countones_36_C78(switch_port.sv:36)   
+   Has Tree              :  Yes                                       
+
+                 Data                                                       
+   Var     Type  Class     Width  Expression                                
+  --------------------------------------------------------------------------
+   PI_0    PI    Unsigned      1                                            
+   PI_1    PI    Unsigned      1                                            
+   PI_2    PI    Unsigned      1                                            
+   PI_3    PI    Unsigned      1                                            
+   T2      IFO   Unsigned      3  PI_0 + PI_1 (switch_port.sv:36)           
+   T7      IFO   Unsigned      2  T2[1:0]                                   
+   PO_0    PO    Unsigned      3  T7 + PI_2 + PI_3 (switch_port.sv:36)      
+  --------------------------------------------------------------------------
+
+--------------------------------------------
+ Design : Master_Control_unit_AMOUNT_SLAVE4 
+--------------------------------------------
+
+ Cell : SWITCH_UNIT_MASTER_CONTROL[3].u_switch_port/u_Master_Control_unit/eq_26 
+--------------------------------------------------------------------------------
+
+   Module                :  DW01_cmp6_J27_H0_D1              
+   Parameters            :  width=4                          
+   Current Implementation:  pparch(area)                     
+   Contained Operations  :  eq_26(Master_control_unit.sv:26) 
+   Has Tree              :  No                               
+
+----------------------
+ Design : FIFO_DEPTH4 
+----------------------
+
+ Cell : SWITCH_UNIT_MASTER_CONTROL[3].u_switch_port/u_FIFO/add_38 
+------------------------------------------------------------------
+
+   Module                :  DW01_add_J21_H1_D1 
+   Parameters            :  width=2            
+   Current Implementation:  pparch(area)       
+   Contained Operations  :  add_38(FIFO.sv:38) 
+   Has Tree              :  No                 
+
+ Cell : SWITCH_UNIT_MASTER_CONTROL[3].u_switch_port/u_FIFO/add_43 
+------------------------------------------------------------------
+
+   Module                :  DW01_add_J21_H2_D1 
+   Parameters            :  width=2            
+   Current Implementation:  pparch(area)       
+   Contained Operations  :  add_27(FIFO.sv:27) 
+                            add_43(FIFO.sv:43) 
+   Has Tree              :  No                 
+
+ Cell : SWITCH_UNIT_MASTER_CONTROL[3].u_switch_port/u_FIFO/eq_43 
+-----------------------------------------------------------------
+
+   Module                :  DW01_cmp6_J21_H3_D1 
+   Parameters            :  width=2             
+   Current Implementation:  pparch(area)        
+   Contained Operations  :  eq_43(FIFO.sv:43)   
+   Has Tree              :  No                  
+
+ Cell : SWITCH_UNIT_MASTER_CONTROL[3].u_switch_port/u_FIFO/eq_44 
+-----------------------------------------------------------------
+
+   Module                :  DW01_cmp6_J21_H0_D1 
+   Parameters            :  width=2             
+   Current Implementation:  pparch(area)        
+   Contained Operations  :  eq_44(FIFO.sv:44)   
+   Has Tree              :  No                  
+
+---------------------------------------------------------------------------------------
+ Design : Arbiter_control_unit_SLAVE_NUM0_AMOUNT_MASTER4_I_input_if_internal_if_slave_ 
+---------------------------------------------------------------------------------------
+
+ Cell : u_Routing/SLAVE_SWITCH[0].u_arbiter/u_Arbiter_control_unit/add_68 
+--------------------------------------------------------------------------
+
+   Module                :  DW01_add_J26_H1_D1                   
+   Parameters            :  width=2                              
+   Current Implementation:  pparch(area)                         
+   Contained Operations  :  add_68(Arbiter_control_unit.sv:68)   
+                            add_68_4(Arbiter_control_unit.sv:68) 
+   Has Tree              :  No                                   
+
+ Cell : u_Routing/SLAVE_SWITCH[0].u_arbiter/u_Arbiter_control_unit/add_68_2 
+----------------------------------------------------------------------------
+
+   Module                :  DW01_add_J26_H0_D1                   
+   Parameters            :  width=2                              
+   Current Implementation:  pparch(area)                         
+   Contained Operations  :  add_68_2(Arbiter_control_unit.sv:68) 
+                            add_68_5(Arbiter_control_unit.sv:68) 
+   Has Tree              :  No                                   
+
+ Cell : u_Routing/SLAVE_SWITCH[0].u_arbiter/u_Arbiter_control_unit/snps_ADD_10 
+-------------------------------------------------------------------------------
+
+   Module                :  DW01_add_J26_H2_D1                   
+   Parameters            :  width=2                              
+   Current Implementation:  pparch(area)                         
+   Contained Operations  :  add_68_3(Arbiter_control_unit.sv:68) 
+                            add_68_6(Arbiter_control_unit.sv:68) 
+   Has Tree              :  No                                   
+
+---------------------------------------------------------------------------------------
+ Design : Arbiter_control_unit_SLAVE_NUM1_AMOUNT_MASTER4_I_input_if_internal_if_slave_ 
+---------------------------------------------------------------------------------------
+
+ Cell : u_Routing/SLAVE_SWITCH[1].u_arbiter/u_Arbiter_control_unit/add_68 
+--------------------------------------------------------------------------
+
+   Module                :  DW01_add_J25_H1_D1                   
+   Parameters            :  width=2                              
+   Current Implementation:  pparch(area)                         
+   Contained Operations  :  add_68(Arbiter_control_unit.sv:68)   
+                            add_68_4(Arbiter_control_unit.sv:68) 
+   Has Tree              :  No                                   
+
+ Cell : u_Routing/SLAVE_SWITCH[1].u_arbiter/u_Arbiter_control_unit/add_68_2 
+----------------------------------------------------------------------------
+
+   Module                :  DW01_add_J25_H0_D1                   
+   Parameters            :  width=2                              
+   Current Implementation:  pparch(area)                         
+   Contained Operations  :  add_68_2(Arbiter_control_unit.sv:68) 
+                            add_68_5(Arbiter_control_unit.sv:68) 
+   Has Tree              :  No                                   
+
+ Cell : u_Routing/SLAVE_SWITCH[1].u_arbiter/u_Arbiter_control_unit/snps_ADD_10 
+-------------------------------------------------------------------------------
+
+   Module                :  DW01_add_J25_H2_D1                   
+   Parameters            :  width=2                              
+   Current Implementation:  pparch(area)                         
+   Contained Operations  :  add_68_3(Arbiter_control_unit.sv:68) 
+                            add_68_6(Arbiter_control_unit.sv:68) 
+   Has Tree              :  No                                   
+
+---------------------------------------------------------------------------------------
+ Design : Arbiter_control_unit_SLAVE_NUM2_AMOUNT_MASTER4_I_input_if_internal_if_slave_ 
+---------------------------------------------------------------------------------------
+
+ Cell : u_Routing/SLAVE_SWITCH[2].u_arbiter/u_Arbiter_control_unit/add_68 
+--------------------------------------------------------------------------
+
+   Module                :  DW01_add_J24_H1_D1                   
+   Parameters            :  width=2                              
+   Current Implementation:  pparch(area)                         
+   Contained Operations  :  add_68(Arbiter_control_unit.sv:68)   
+                            add_68_4(Arbiter_control_unit.sv:68) 
+   Has Tree              :  No                                   
+
+ Cell : u_Routing/SLAVE_SWITCH[2].u_arbiter/u_Arbiter_control_unit/add_68_2 
+----------------------------------------------------------------------------
+
+   Module                :  DW01_add_J24_H0_D1                   
+   Parameters            :  width=2                              
+   Current Implementation:  pparch(area)                         
+   Contained Operations  :  add_68_2(Arbiter_control_unit.sv:68) 
+                            add_68_5(Arbiter_control_unit.sv:68) 
+   Has Tree              :  No                                   
+
+ Cell : u_Routing/SLAVE_SWITCH[2].u_arbiter/u_Arbiter_control_unit/snps_ADD_10 
+-------------------------------------------------------------------------------
+
+   Module                :  DW01_add_J24_H2_D1                   
+   Parameters            :  width=2                              
+   Current Implementation:  pparch(area)                         
+   Contained Operations  :  add_68_3(Arbiter_control_unit.sv:68) 
+                            add_68_6(Arbiter_control_unit.sv:68) 
+   Has Tree              :  No                                   
+
+---------------------------------------------------------------------------------------
+ Design : Arbiter_control_unit_SLAVE_NUM3_AMOUNT_MASTER4_I_input_if_internal_if_slave_ 
+---------------------------------------------------------------------------------------
+
+ Cell : u_Routing/SLAVE_SWITCH[3].u_arbiter/u_Arbiter_control_unit/add_68 
+--------------------------------------------------------------------------
+
+   Module                :  DW01_add_J23_H1_D1                   
+   Parameters            :  width=2                              
+   Current Implementation:  pparch(area)                         
+   Contained Operations  :  add_68(Arbiter_control_unit.sv:68)   
+                            add_68_4(Arbiter_control_unit.sv:68) 
+   Has Tree              :  No                                   
+
+ Cell : u_Routing/SLAVE_SWITCH[3].u_arbiter/u_Arbiter_control_unit/add_68_2 
+----------------------------------------------------------------------------
+
+   Module                :  DW01_add_J23_H0_D1                   
+   Parameters            :  width=2                              
+   Current Implementation:  pparch(area)                         
+   Contained Operations  :  add_68_2(Arbiter_control_unit.sv:68) 
+                            add_68_5(Arbiter_control_unit.sv:68) 
+   Has Tree              :  No                                   
+
+ Cell : u_Routing/SLAVE_SWITCH[3].u_arbiter/u_Arbiter_control_unit/snps_ADD_10 
+-------------------------------------------------------------------------------
+
+   Module                :  DW01_add_J23_H2_D1                   
+   Parameters            :  width=2                              
+   Current Implementation:  pparch(area)                         
+   Contained Operations  :  add_68_3(Arbiter_control_unit.sv:68) 
+                            add_68_6(Arbiter_control_unit.sv:68) 
+   Has Tree              :  No                                   
+
+1

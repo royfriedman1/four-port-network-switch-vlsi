@@ -1,0 +1,97 @@
+Warning: Corner Slow:  0 process number, 2 process label, 0 voltage, and 0 temperature mismatches. (PVT-030)
+Warning: 1276 cells affected for early, 1276 for late. (PVT-031)
+Warning: 0 port driving_cells affected for early, 0 for late. (PVT-034)
+Warning: Corner Fast:  0 process number, 2 process label, 0 voltage, and 0 temperature mismatches. (PVT-030)
+Warning: 1276 cells affected for early, 1276 for late. (PVT-031)
+Warning: 0 port driving_cells affected for early, 0 for late. (PVT-034)
+Information: The stitching and editing of coupling caps is turned OFF for design 'switch_4port_no_cg_f11.dlib:switch_4port.design'. (TIM-125)
+Information: Design Average RC for design switch_4port  (NEX-011)
+Information: r = 1.053898 ohm/um, via_r = 0.461430 ohm/cut, c = 0.072380 ff/um, cc = 0.000000 ff/um (X dir) (NEX-017)
+Information: r = 1.384202 ohm/um, via_r = 0.578659 ohm/cut, c = 0.083441 ff/um, cc = 0.000000 ff/um (Y dir) (NEX-017)
+Information: The RC mode used is VR for design 'switch_4port'. (NEX-022)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 1362, routed nets = 0, across physical hierarchy nets = 0, parasitics cached nets = 1362, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+************************************************************
+Timer Settings:
+Delay Calculation Style:                   auto
+Signal Integrity Analysis:                 disabled
+Timing Window Analysis:                    disabled
+Advanced Waveform Propagation:             disabled
+Variation Type:                            fixed_derate
+Clock Reconvergence Pessimism Removal:     disabled
+Advanced Receiver Model:                   disabled
+LLE:                                       disabled
+ML Acceleration:                           off
+************************************************************
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+Design : switch_4port
+Version: V-2023.12-SP3
+Date   : Sat Jan 17 21:15:24 2026
+****************************************
+
+  Startpoint: u_Routing/SLAVE_SWITCH[2].u_arbiter/u_Arbiter_control_unit/SELECT_RDY[0].u_d_ff/dout_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: ports[3].data_out[0] (output port clocked by clk)
+  Mode: FUNC
+  Corner: Slow
+  Scenario: FUNC_Slow
+  Path Group: **reg2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  u_Routing/SLAVE_SWITCH[2].u_arbiter/u_Arbiter_control_unit/SELECT_RDY[0].u_d_ff/dout_reg[0]/CLK (SDFFARX1_HVT)
+                                                   0.00      0.00 r
+  u_Routing/SLAVE_SWITCH[2].u_arbiter/u_Arbiter_control_unit/SELECT_RDY[0].u_d_ff/dout_reg[0]/Q (SDFFARX1_HVT)
+                                                   0.65      0.65 r
+  SWITCH_UNIT_MASTER_CONTROL[0].u_switch_port/u_Master_Control_unit/ctmi_53/Y (XNOR2X1_RVT)
+                                                   0.27      0.92 r
+  SWITCH_UNIT_MASTER_CONTROL[0].u_switch_port/u_Master_Control_unit/ctmi_50/Y (NAND4X0_RVT)
+                                                   0.15      1.07 f
+  SWITCH_UNIT_MASTER_CONTROL[0].u_switch_port/u_Master_Control_unit/ctmi_49/Y (AOI21X2_RVT)
+                                                   0.32      1.39 r
+  u_Routing/SLAVE_SWITCH[3].u_arbiter/u_Arbiter_control_unit/ctmi_95/Y (OR3X1_RVT)
+                                                   0.22      1.61 r
+  u_Routing/SLAVE_SWITCH[3].u_arbiter/u_Arbiter_control_unit/ctmi_97/Y (INVX1_RVT)
+                                                   0.09      1.70 f
+  u_Routing/SLAVE_SWITCH[3].u_arbiter/u_Arbiter_control_unit/ctmi_117/Y (OAI221X1_RVT)
+                                                   0.31      2.01 r
+  u_Routing/SLAVE_SWITCH[3].u_arbiter/u_Arbiter_control_unit/ctmi_122/Y (OA221X1_RVT)
+                                                   0.15      2.17 r
+  u_Routing/SLAVE_SWITCH[3].u_arbiter/u_Arbiter_control_unit/ctmi_126/Y (NAND2X0_RVT)
+                                                   0.10      2.27 f
+  u_Routing/SLAVE_SWITCH[3].u_arbiter/u_Arbiter_control_unit/ctmi_125/Y (OA221X1_RVT)
+                                                   0.18      2.45 f
+  u_Routing/SLAVE_SWITCH[3].u_arbiter/u_Arbiter_control_unit/ctmi_124/Y (OA22X1_RVT)
+                                                   0.29      2.74 f
+  u_Routing/SLAVE_SWITCH[3].u_arbiter/u_Arbiter_data_path/phfnr_buf_284/Y (INVX0_RVT)
+                                                   0.13      2.87 r
+  u_Routing/SLAVE_SWITCH[3].u_arbiter/u_Arbiter_data_path/ctmi_254/Y (AND2X2_RVT)
+                                                   0.23      3.10 r
+  u_Routing/SLAVE_SWITCH[3].u_arbiter/u_Arbiter_data_path/ctmi_285/Y (AO22X1_RVT)
+                                                   0.21      3.31 r
+  u_Routing/SLAVE_SWITCH[3].u_arbiter/u_Arbiter_data_path/ctmi_284/Y (AO221X1_RVT)
+                                                   0.19      3.50 r
+  ports[3].data_out[0] (inout)                     0.00      3.50 r
+  data arrival time                                          3.50
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  clock uncertainty                               -0.15      9.85
+  output external delay                           -0.20      9.65
+  data required time                                         9.65
+  ------------------------------------------------------------------------
+  data required time                                         9.65
+  data arrival time                                         -3.50
+  ------------------------------------------------------------------------
+  slack (MET)                                                6.15
+
+
+1

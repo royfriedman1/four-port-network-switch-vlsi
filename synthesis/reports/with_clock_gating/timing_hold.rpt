@@ -1,0 +1,48 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 1
+        -report_by design
+Design : switch_4port
+Version: V-2023.12-SP3
+Date   : Sat Jan 17 20:57:04 2026
+****************************************
+
+  Startpoint: SWITCH_UNIT_MASTER_CONTROL[3].u_switch_port/u_FIFO/fifo_reg[2][target][2] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: SWITCH_UNIT_MASTER_CONTROL[3].u_switch_port/u_FIFO/data_out_reg[target][2] (rising edge-triggered flip-flop clocked by clk)
+  Mode: FUNC
+  Corner: Fast
+  Scenario: FUNC_Fast
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  SWITCH_UNIT_MASTER_CONTROL[3].u_switch_port/u_FIFO/fifo_reg[2][target][2]/CLK (SDFFX1_RVT)
+                                                   0.00      0.00 r
+  SWITCH_UNIT_MASTER_CONTROL[3].u_switch_port/u_FIFO/fifo_reg[2][target][2]/Q (SDFFX1_RVT)
+                                                   0.27      0.27 r
+  SWITCH_UNIT_MASTER_CONTROL[3].u_switch_port/u_FIFO/ctmi_468/Y (AO221X1_RVT)
+                                                   0.16      0.43 r
+  SWITCH_UNIT_MASTER_CONTROL[3].u_switch_port/u_FIFO/data_out_reg[target][2]/D (SDFFX2_RVT)
+                                                   0.00      0.43 r
+  data arrival time                                          0.43
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  SWITCH_UNIT_MASTER_CONTROL[3].u_switch_port/u_FIFO/data_out_reg[target][2]/CLK (SDFFX2_RVT)
+                                                   0.00      0.00 r
+  library hold time                               -0.10     -0.10
+  data required time                                        -0.10
+  ------------------------------------------------------------------------
+  data required time                                        -0.10
+  data arrival time                                         -0.43
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.53
+
+
+1
